@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf dist && rimraf .temp",
-    "build": "npm run clean && vuepress build ./ --temp .temp",
+    "build": "vuepress build ./ --temp .temp",
     "start": "vuepress dev ./ --temp .temp",
     "lint": "markdownlint -r markdownlint-rule-emphasis-style -c ./.markdownlint.json **/*.md -i node_modules",
     "lint:fix": "markdownlint -f -r markdownlint-rule-emphasis-style -c ./.markdownlint.json **/*.md -i node_modules",
